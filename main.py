@@ -4,13 +4,19 @@ def start_game():
     print("1. Take the small path to the left")
     print("2. Take the wide road to the right")
 
-    choice1 = input("Which path do you choose? Enter 1 or 2: ")
+    choice1 = get_valid_input("Which path do you choose? Enter 1 or 2: ")
 
     if choice1 == "1":
         forest_path()
     elif choice1 == "2":
         highway_path()
 
+def get_valid_input(prompt, valid_choices):
+    while True:
+        choice = input(prompt)
+        if choice in valid_choices:
+            return choice
+        print("Invalid input. Please enter one of: " + ", ".join(valid_choices))
 
 def forest_path():
     print("\nYou follow the small path into the forest. You hear rustling in the bushes.")
