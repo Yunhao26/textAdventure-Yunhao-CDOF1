@@ -10,8 +10,6 @@ def start_game():
         forest_path()
     elif choice1 == "2":
         highway_path()
-    else:
-        print("You wander off and get lost. Game over.")
 
 
 def forest_path():
