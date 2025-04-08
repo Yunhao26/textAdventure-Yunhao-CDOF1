@@ -17,6 +17,15 @@ A simple text-based adventure game where the player's decisions shape the story 
 4. Push your changes to your forked repository.
 5. Submit a pull request with a clear description of your contribution.
 
+## Developer Guide
+
+If you want to contribute new story paths or endings:
+
+- Main logic is in `main.py`
+- Each path (e.g., `forest_path()`, `highway_path()`) is a function
+- You can create a new function and link it via `input()` options
+- Be sure to test the flow from start to finish
+
 ---
 
 Feel free to suggest improvements, fix bugs, or add new story paths!
