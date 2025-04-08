@@ -23,13 +23,20 @@ def forest_path():
     print("1. Go check it out")
     print("2. Walk away quickly")
 
-    choice = input("Your choice? Enter 1 or 2: ")
+    choice = get_valid_input("Your choice? Enter 1 or 2: ", ["1", "2"])
 
     if choice == "1":
         print("\nA small fox jumps out and becomes your friend! You win! 🎉")
+        print("1. Follow the fox")
+        print("2. Stay where you are")
+
+        follow_choice = get_valid_input("Choose: ", ["1", "2"])
+        if follow_choice == "1":
+            print("\nThe fox leads you to a hidden treasure! You win again! 🪙")
+        else:
+            print("\nYou stay still for hours and eventually fall asleep. Game over.")
     else:
         print("\nYou get lost in the forest and are chased by wolves. Game over. 💀")
-
 
 def highway_path():
     print("\nYou take the wide road. There's an old cabin ahead.")
