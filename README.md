@@ -1,2 +1,2 @@
 # textAdventure-Yunhao-CDOF1
-A simple text-based adventure game
+This is a simple text-based adventure game where the player's decisions shape the story.
